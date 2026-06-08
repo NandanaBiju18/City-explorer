@@ -1,0 +1,18 @@
+rmdir /s /q .git
+git init
+git add .
+git commit -m "clean city explorer"
+git branch -M main
+git remote add origin https://github.com/NandanaBiju18/City-explorer.git
+git push -u origin main
+
+
+
+
+✔ .env should NEVER be in git
+✔ only this should be committed:
+app.py
+static/
+templates/
+README.md
+.gitignore
