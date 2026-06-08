@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>City Intelligence Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- 🏠 HEADER -->
+    <div class="header">
+        <h1>🌍 City Intelligence Dashboard</h1>
+        <p>Explore weather, insights, and tourist places of any city in one place</p>
+    </div>
+
+    <!-- 🔍 SEARCH SECTION -->
+    <div class="search-box">
+
+        <input type="text" id="cityInput" placeholder="Enter city name...">
+
+        <button onclick="getCityData()">Search</button>
+
+    </div>
+
+    <!-- 🧠 SUMMARY -->
+    <div id="result" class="card hidden"></div>
+
+    <!-- 🔘 BUTTONS -->
+    <div class="buttons hidden" id="actions">
+
+        <button onclick="showClimate()">🌤️ Climate</button>
+        <button onclick="showNews()">📰 News</button>
+        <button onclick="showPlaces()">🗺️ Tourist Places</button>
+        <button onclick="showIntro()">🤖 AI Insight</button>
+    </div>
+
+    <!-- 📦 DETAILS -->
+    <div id="details" class="card"></div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

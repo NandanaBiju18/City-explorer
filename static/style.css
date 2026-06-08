@@ -1,0 +1,172 @@
+body{
+    margin:0;
+    font-family:"Segoe UI",sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #a8dadc,
+        #bde0d8,
+        #cfe8d5
+    );
+
+    min-height:100vh;
+    color:#2d3748;
+}
+
+/* Container */
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+    text-align:center;
+}
+
+/* Header */
+.header h1{
+    color:#4f6650;
+    font-size:46px;
+}
+
+.header p{
+    color:#7a7a7a;
+}
+/* Search */
+input{
+    padding:14px;
+    width:300px;
+    border:none;
+    border-radius:12px;
+    background:white;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.search-box button{
+    padding:16px 35px;
+    font-size:18px;
+    font-weight:bold;
+    border:none;
+    border-radius:12px;
+    background:#72ebef;
+    color:white;
+    cursor:pointer;
+    min-width:150px;
+}
+
+.search-box button:hover{
+    transform:scale(1.05);
+}
+/* Buttons */
+.buttons button{
+    padding:16px 35px;
+    font-size:18px;
+    font-weight:700;
+    border-radius:12px;
+    margin:10px;
+    min-width:150px;
+
+    background:#6cdbee;
+    color:#f0f2f4;
+}
+.buttons button:hover{
+    transform:translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+button {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Main City Card */
+.card,
+.news-card,
+.city-card{
+    background:rgba(255,255,255,0.25);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+}
+.city-img{
+    width:320px;
+    max-width:100%;
+    border-radius:15px;
+    margin:15px 0;
+}
+
+/* Quick Info Grid */
+.quick-info{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    margin-top:20px;
+}
+
+.quick-info p{
+    background:#a8a6a6;
+
+    border-left:5px solid #8fa68e;
+
+    padding:12px;
+    border-radius:12px;
+
+    margin:0;
+}
+
+/* News Cards */
+
+.news-card h4 {
+    color: #000 !important;
+}
+
+.news-card p{
+    color:#151616;
+}
+
+.news-card a{
+    color:#0a0a0a;
+    font-weight:bold;
+}
+
+#details{
+    color:rgb(70, 70, 70);
+}
+
+#details{
+    margin-top:25px;
+    color:#3a3a3a;
+}
+
+
+/* Mobile */
+@media(max-width:600px){
+
+    .quick-info{
+        grid-template-columns:1fr;
+    }
+
+    input{
+        width:85%;
+        margin-bottom:10px;
+    }
+
+    button{
+        width:80%;
+        margin-top:10px;
+    }
+}
+
+.loading{
+    margin-top:20px;
+    padding:25px;
+    background:rgba(255,255,255,0.2);
+    border-radius:15px;
+    font-size:20px;
+    font-weight:600;
+    text-align:center;
+}
+
+.error{
+    margin-top:20px;
+    padding:20px;
+    background:rgba(255,0,0,0.15);
+    border-radius:15px;
+    font-weight:bold;
+}
